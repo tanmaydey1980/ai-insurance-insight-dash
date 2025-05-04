@@ -77,8 +77,8 @@ const Reports = () => {
                 <div className="h-[350px]">
                   <ChartContainer 
                     config={{
-                      conversion: { label: "Conversion Rate", theme: { light: "#9b87f5" } },
-                      ctr: { label: "Click Through Rate", theme: { light: "#0EA5E9" } }
+                      conversion: { label: "Conversion Rate", theme: { light: "#9b87f5", dark: "#9b87f5" } },
+                      ctr: { label: "Click Through Rate", theme: { light: "#0EA5E9", dark: "#0EA5E9" } }
                     }}
                   >
                     <LineChart 

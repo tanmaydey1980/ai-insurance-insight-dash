@@ -30,8 +30,8 @@ const TransactionMetrics: React.FC<TransactionMetricsProps> = ({ activeMetrics }
           <div className="h-[300px]">
             <ChartContainer 
               config={{
-                transactions: { label: "Transactions", theme: { light: "#9b87f5" } },
-                averageValue: { label: "Avg. Value ($)", theme: { light: "#0EA5E9" } },
+                transactions: { label: "Transactions", theme: { light: "#9b87f5", dark: "#9b87f5" } },
+                averageValue: { label: "Avg. Value ($)", theme: { light: "#0EA5E9", dark: "#0EA5E9" } },
               }}
             >
               <BarChart 

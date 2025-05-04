@@ -30,10 +30,10 @@ const ChannelPerformance: React.FC<ChannelPerformanceProps> = ({ activeMetrics }
           <div className="h-[350px]">
             <ChartContainer 
               config={{
-                conversion: { label: "Conversion Rate (%)", theme: { light: "#9b87f5" } },
-                ctr: { label: "Click Through Rate (%)", theme: { light: "#0EA5E9" } },
-                cpa: { label: "Cost per Acquisition ($)", theme: { light: "#F97316" } },
-                roas: { label: "Return on Ad Spend (x)", theme: { light: "#8B5CF6" } }
+                conversion: { label: "Conversion Rate (%)", theme: { light: "#9b87f5", dark: "#9b87f5" } },
+                ctr: { label: "Click Through Rate (%)", theme: { light: "#0EA5E9", dark: "#0EA5E9" } },
+                cpa: { label: "Cost per Acquisition ($)", theme: { light: "#F97316", dark: "#F97316" } },
+                roas: { label: "Return on Ad Spend (x)", theme: { light: "#8B5CF6", dark: "#8B5CF6" } }
               }}
             >
               <BarChart 
