@@ -1,13 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from "react";
+import DashboardLayout from "@/components/DashboardLayout";
+import DashboardHeader from "@/components/DashboardHeader";
+import MetricsOverview from "@/components/MetricsOverview";
+import NextBestActionPanel from "@/components/NextBestActionPanel";
+import CustomerJourneyMap from "@/components/CustomerJourneyMap";
+import AudienceSegmentation from "@/components/AudienceSegmentation";
+import ContentPerformance from "@/components/ContentPerformance";
+import BehavioralTargeting from "@/components/BehavioralTargeting";
+import AISidebar from "@/components/AISidebar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <DashboardLayout>
+      <DashboardHeader />
+      <div className="animate-fade-in">
+        <MetricsOverview />
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+          <NextBestActionPanel />
+          <CustomerJourneyMap />
+        </div>
+        
+        <AudienceSegmentation />
+        <ContentPerformance />
+        <BehavioralTargeting />
       </div>
-    </div>
+      
+      <AISidebar />
+    </DashboardLayout>
   );
 };
 
