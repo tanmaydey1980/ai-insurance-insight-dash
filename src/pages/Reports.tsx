@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import DashboardLayout from "@/components/DashboardLayout";
 import DashboardHeader from "@/components/DashboardHeader";
@@ -10,7 +9,7 @@ import TransactionMetrics from "@/components/TransactionMetrics";
 import MetricsSetup from "@/components/MetricsSetup";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
-import { RefreshCw, PlusCircle, FileChartBar, Clock } from "lucide-react";
+import { RefreshCw, PlusCircle, ChartBar, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
 import { CustomReport, savedReports } from "@/data/reportsData";
@@ -123,7 +122,7 @@ const Reports = () => {
           <TabsContent value="custom" className="space-y-6">
             {savedReports.length === 0 ? (
               <Card className="flex flex-col items-center justify-center p-10 text-center">
-                <FileChartBar className="h-16 w-16 text-muted-foreground mb-4" />
+                <ChartBar className="h-16 w-16 text-muted-foreground mb-4" />
                 <h3 className="text-lg font-medium">No custom reports yet</h3>
                 <p className="text-muted-foreground mb-6">
                   Create your first custom report to visualize data specific to your needs

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import DashboardLayout from "@/components/DashboardLayout";
 import DashboardHeader from "@/components/DashboardHeader";
@@ -18,7 +17,7 @@ import { channelData, transactionData, purchasesByProductType } from "@/data/rep
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { PlusCircle, FileChartBar } from "lucide-react";
+import { PlusCircle, ChartBar } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Report name is required" }),
@@ -111,7 +110,7 @@ const CreateReport = () => {
       return (
         <div className="flex items-center justify-center h-[300px] bg-muted/20 rounded-md border border-dashed">
           <div className="text-center text-muted-foreground">
-            <FileChartBar className="h-10 w-10 mx-auto mb-2" />
+            <ChartBar className="h-10 w-10 mx-auto mb-2" />
             <p>Select a template and metrics to preview your report</p>
           </div>
         </div>
